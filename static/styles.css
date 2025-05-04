@@ -1,0 +1,87 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Tenorite;
+}
+
+#fundo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#area-superior {
+  background-color: #56bc7b;
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#area-inferior {
+  background-color: #eeeeee;
+  flex: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo {
+  width: 90%;
+  max-width: 1200px;
+}
+
+#balao-central {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15);
+  padding: 40px 60px;
+  text-align: center;
+  width: 1000px;
+  height: 700px;
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.balao-central header {
+  background-color: #0077b6;
+  color: white;
+  padding: 1000px;
+  border-radius: 30px;
+}
+
+.botoes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.botao-primario, .botao-secundario {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.botao-primario {
+  background-color: #56bc7b;
+  color: #fff;
+}
+
+.botao-secundario {
+  background-color: #fff;
+  color: #56bc7b;
+  border: 2px solid #56bc7b;
+}
